@@ -1,0 +1,1081 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+
+.brand,
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.nav-right a {
+  margin-left: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-btn {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  border-radius: 20px;
+  color: white !important;
+}
+
+
+
+/* =========================
+   HERO (HOME)
+========================= */
+.hero {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1527529482837-4698179dc6ce");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8));
+}
+
+.hero-overlay {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+
+.hero-overlay p {
+  font-size: 20px;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  text-decoration: none;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 20px 40px;
+}
+
+/* =========================
+   EVENTS GRID
+========================= */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 22px;
+}
+
+.event-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.event-desc {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.event-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.event-meta span {
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.event-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* =========================
+   EVENT DETAILS (FINAL)
+========================= */
+.event-details-page {
+  background: #0b0f1a;
+  color: white;
+  min-height: 100vh;
+}
+
+.event-hero {
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.event-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9));
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.event-title {
+  font-size: 42px;
+  max-width: 900px;
+}
+
+.event-container {
+  max-width: 1100px;
+  margin: -60px auto 0;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.event-main {
+  color: #e5e7eb;
+}
+
+.event-description {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.event-sidebar {
+  align-self: flex-start;
+}
+
+.event-card {
+  background: #111827;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.event-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.book-now-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 16px;
+}
+
+/* =========================
+   AUTH PAGES
+========================= */
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  width: 360px;
+}
+
+/* =========================
+   ADMIN
+========================= */
+.admin-container {
+  padding: 40px;
+}
+
+.admin-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .event-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-overlay h1 {
+    font-size: 40px;
+  }
+}
+
+/* =========================
+   NAVBAR (FIXED & CLEAN)
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 1000;
+}
+
+.brand,
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* USER MENU */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #c7d2fe;
+}
+
+/* LOGOUT */
+.logout-btn {
+  padding: 6px 14px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =========================
+   PAGE OFFSET FIX
+========================= */
+.page,
+.container,
+.auth-page,
+.event-details-page,
+.admin-container {
+  padding-top: 100px;
+}
+
+/* =========================
+   AUTH PAGES (LOGIN / REGISTER)
+========================= */
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  width: 360px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* =========================
+   ADMIN PAGES
+========================= */
+.admin-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 40px;
+}
+
+.admin-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table th {
+  background: #0f172a;
+  color: white;
+  padding: 14px;
+}
+
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* =========================
+   ADMIN PAGES
+========================= */
+.admin-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 40px;
+}
+
+.admin-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table th {
+  background: #0f172a;
+  color: white;
+  padding: 14px;
+}
+
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* =========================
+   ADMIN PAGES
+========================= */
+.admin-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 40px;
+}
+
+.admin-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table th {
+  background: #0f172a;
+  color: white;
+  padding: 14px;
+}
+
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* =========================
+   NAVBAR CLEAN FIX
+========================= */
+/* NAVBAR CLEAN UI */
+.navbar {
+  height: 70px;
+  padding: 0 30px;
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.welcome-text {
+  font-size: 14px;
+  color: #e0e7ff;
+}
+
+/* MENU */
+.menu-wrapper {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+/* DROPDOWN */
+.menu-dropdown {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: white;
+  color: #020617;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  padding: 10px 0;
+  z-index: 2000;
+}
+
+.menu-dropdown a,
+.menu-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #020617;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menu-dropdown a:hover,
+.menu-dropdown button:hover {
+  background: #f1f5f9;
+}
+
+.menu-dropdown hr {
+  border: none;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 6px 0;
+}
+
+.logout-btn {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* =========================
+   NAVBAR DROPDOWN (FIXED)
+========================= */
+
+.user-menu {
+  position: relative;
+}
+
+/* ☰ button */
+.menu-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Dropdown card */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  width: 220px;
+  background: #ffffff;
+  color: #020617;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  padding: 8px 0;
+  z-index: 1000;
+  animation: dropdownFade 0.18s ease-out;
+}
+
+/* Animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links + buttons */
+.dropdown a,
+.dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 14px;
+  color: #020617;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Hover */
+.dropdown a:hover,
+.dropdown button:hover {
+  background: #f1f5f9;
+}
+
+/* Divider */
+.dropdown hr {
+  border: none;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 6px 0;
+}
+
+/* Logout */
+.dropdown .logout {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Welcome text */
+.welcome-text {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #e0e7ff;
+}
+
+/* Mobile safety */
+@media (max-width: 480px) {
+  .dropdown {
+    width: 190px;
+  }
+}
+
+/* =========================
+   ADMIN CREATE EVENT UI
+========================= */
+
+.admin-page {
+  min-height: 100vh;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+  display: flex;
+  justify-content: center;
+}
+
+.admin-form-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 720px;
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+.admin-form-card h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: #020617;
+}
+
+.admin-form-card .subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #020617;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* GRID */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* IMAGE UPLOAD */
+.upload-box {
+  border: 2px dashed #c7d2fe;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload-box input {
+  width: 100%;
+}
+
+.upload-box img {
+  margin-top: 16px;
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+/* BUTTON */
+.primary-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  opacity: 0.95;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .admin-form-card {
+    padding: 26px;
+  }
+}
+
+/* ================================
+   SIGNATURE EVENTS – UI UPGRADE
+================================ */
+
+/* SECTION TITLE */
+.events-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.events-subtitle {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 36px;
+}
+
+/* CARD */
+.event-card {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #0f172a,
+    #020617
+  );
+  border-radius: 22px;
+  padding: 28px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55);
+}
+
+/* TITLE */
+.event-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* DESCRIPTION */
+.event-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #cbd5f5;
+  margin-bottom: 20px;
+}
+
+/* META ICONS */
+.event-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.event-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0e7ff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  backdrop-filter: blur(6px);
+}
+
+/* BUTTON */
+.event-btn {
+  align-self: flex-start;
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
+  color: white;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 34px;
+  }
+
+  .event-card {
+    padding: 22px;
+  }
+}
+
+/* ================================
+   SIGNATURE EVENTS SECTION
+================================ */
+
+.events-section {
+  position: relative;
+  padding: 120px 20px 140px;
+  background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #eef2ff 40%,
+    #ffffff 100%
+  );
+  overflow: hidden;
+}
+
+/* Soft glow blobs */
+.events-section::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.25),
+    transparent 70%
+  );
+}
+
+.events-section::after {
+  content: "";
+  position: absolute;
+  bottom: -140px;
+  right: -140px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(
+    circle,
+    rgba(147, 51, 234, 0.25),
+    transparent 70%
+  );
+}
+
+/* Content wrapper */
+.events-overlay {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  z-index: 2;
+}
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.events-title {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.events-subtitle {
+  text-align: center;
+  font-size: 17px;
+  color: #475569;
+  max-width: 640px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+/* ================================
+   EVENTS GRID
+================================ */
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 36px;
+}
+
+/* ================================
+   EVENT CARD (PREMIUM)
+================================ */
+
+.event-card {
+  background: linear-gradient(
+    180deg,
+    #0f172a,
+    #020617
+  );
+  border-radius: 22px;
+  padding: 30px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.55);
+}
+
+/* Title */
+.event-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.event-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #c7d2fe;
+  margin-bottom: 22px;
+}
+
+/* Meta pills */
+.event-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.event-meta span {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0e7ff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  backdrop-filter: blur(6px);
+}
+
+/* CTA Button */
+.event-btn {
+  align-self: flex-start;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
+  color: white;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(124, 58, 237, 0.5);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 34px;
+  }
+
+  .events-subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .event-card {
+    padding: 24px;
+  }
+}
